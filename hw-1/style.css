@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  height: 1024px;
+  padding-top: 217px;
+  background-image: url(img/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+
+.text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 44px;
+}
+
+.button {
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234px;
+  height: 48px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.content {
+  background: #000915;
+}
+
+.center {
+  padding-left: 120px;
+  padding-right: 120px;
+}/*# sourceMappingURL=style.css.map */
