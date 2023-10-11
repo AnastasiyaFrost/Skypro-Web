@@ -14,8 +14,9 @@
 }
 
 .header {
+  width: 789px;
   color: #FFF;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -27,8 +28,9 @@
 }
 
 .text {
+  width: 481px;
   color: #FFF;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -41,17 +43,22 @@
   background: #9C0332;
   width: 234px;
   height: 48px;
-  color: #FFF;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+}
+
+.link {
+  color: #FFF;
+  text-decoration: none;
 }
 
 .content {
   padding-top: 128px;
   padding-bottom: 128px;
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   background: #000915;
 }
@@ -72,7 +79,7 @@
   left: 32px;
   bottom: 32px;
   color: #FFF;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -82,4 +89,6 @@
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
