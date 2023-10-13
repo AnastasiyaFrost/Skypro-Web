@@ -39,7 +39,10 @@
 }
 
 .button {
+  color: #FFF;
+  text-decoration: none;
   border-radius: 30px;
+  padding: 13px 74px;
   background: #9C0332;
   width: 234px;
   height: 48px;
@@ -52,11 +55,6 @@
   &:hover {
     background: #EB443F;
   }
-}
-
-.link {
-  color: #FFF;
-  text-decoration: none;
 }
 
 .content {
@@ -79,6 +77,7 @@
   border-radius: 18px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), lightgray 50%;
   transition: all 0.3s;
+
   &:hover {
     border-radius: 16px;
     border: 3px solid #44D2FF;
