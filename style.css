@@ -39,6 +39,7 @@
 }
 
 .button {
+
   color: #FFF;
   text-decoration: none;
   border-radius: 30px;
@@ -50,6 +51,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+
   transition: all 0.3s;
 
   &:hover {
@@ -73,6 +75,7 @@
 .game-img {
   width: 378px;
   height: 300px;
+
   box-sizing: border-box;
   border-radius: 18px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), lightgray 50%;
@@ -100,6 +103,7 @@
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
+
 
 /*# sourceMappingURL=style.css.map */
 
