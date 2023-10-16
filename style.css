@@ -39,7 +39,11 @@
 }
 
 .button {
+
+  color: #FFF;
+  text-decoration: none;
   border-radius: 30px;
+  padding: 13px 74px;
   background: #9C0332;
   width: 234px;
   height: 48px;
@@ -47,11 +51,12 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-}
 
-.link {
-  color: #FFF;
-  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    background: #EB443F;
+  }
 }
 
 .content {
@@ -70,8 +75,16 @@
 .game-img {
   width: 378px;
   height: 300px;
+
+  box-sizing: border-box;
   border-radius: 18px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), lightgray 50%;
+  transition: all 0.3s;
+
+  &:hover {
+    border-radius: 16px;
+    border: 3px solid #44D2FF;
+  }
 }
 
 .game-sign {
@@ -91,4 +104,45 @@
   padding-right: calc(50% - 600px);
 }
 
+
 /*# sourceMappingURL=style.css.map */
+
+/*мобилка*/
+@media(max-width: 767px) {
+  .top {
+    height: 735px;
+    padding-top: 238px;
+    text-align: center;
+  }
+
+  .header {
+    width: 343px;
+    font-size: 32px;
+    margin-bottom: 33px;
+  }
+
+  .text {
+    width: 343px;
+    font-size: 14px;
+    margin-bottom: 33px;
+  }
+
+  .game-img {
+    width: 343px;
+    border-radius: 16px;
+  }
+
+  .center {
+    padding-left: calc(50% - 172px);
+    padding-right: calc(50% - 172px);
+  }
+}
+
+@media(max-width: 375px) {
+  .top {
+    background-image: url(img/bg-small.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
