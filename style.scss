@@ -36,6 +36,14 @@
     line-height: 32px;
     margin-bottom: 44px;
 }
+.h2{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
 .button {
     border-radius: 30px;
@@ -46,39 +54,95 @@
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
+    text-decoration: none;
     font-weight: 400;
+    padding: 13px 74px;
+    box-sizing: border-box;
 }
 
 .content {
     padding-top: 128px;
     padding-bottom: 128px;
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
     background: #000915;
 }
-.game-link-box {
-position: relative;
-}
-.game-img {
-    width: 378px;
-    height: 300px;
-    border-radius: 18px;
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), lightgray 50%;
+.game {
+    &-link-box {
+        position: relative;
+    }
+    &-img {
+        width: 378px;
+        height: 300px;
+        border-radius: 18px;
+        background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), lightgray 50%;
     
-}
-.game-sign {
-    position: absolute;
-    left: 32px;
-    bottom: 32px;
-    color: #FFF;
+    }
+    &-sign {
+        position: absolute;
+        left: 32px;
+        bottom: 32px;
+        color: #FFF;
         font-family: Montserrat;
         font-size: 24px;
         font-style: normal;
         font-weight: 600;
         line-height: 32px;
+    }
+
+    &-box{
+        padding-top: 234px;
+        padding-bottom: 234px;
+        background: #000915;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 135px;
+        
+    }
+    &__desc{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        justify-content: center;
+    }
+    &__text{
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+    }
+    &__svg{
+        width: 485px;
+        height: 334px;
+    }
 }
+
 
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
+}
+
+@media((max-width: 768px)) {
+.top{
+    background-image: url(img/bg-small.jpg);
+    }
+.game{
+    &-img{
+        width: 343px;
+    }
+    &__svg{
+        width: 344px;
+        height: 236px;
+    }
+}
+.center {
+    padding-left: calc(50% - 172px);
+    padding-right: calc(50% - 172px);
+}
 }

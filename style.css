@@ -14,9 +14,8 @@
 }
 
 .header {
-  width: 789px;
   color: #FFF;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -28,9 +27,8 @@
 }
 
 .text {
-  width: 481px;
   color: #FFF;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -38,25 +36,28 @@
   margin-bottom: 44px;
 }
 
-.button {
-
+.h2 {
   color: #FFF;
-  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.button {
   border-radius: 30px;
-  padding: 13px 74px;
   background: #9C0332;
   width: 234px;
   height: 48px;
-  font-family: 'Montserrat', sans-serif;
+  color: #FFF;
+  font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
+  text-decoration: none;
   font-weight: 400;
-
-  transition: all 0.3s;
-
-  &:hover {
-    background: #EB443F;
-  }
+  padding: 13px 74px;
+  box-sizing: border-box;
 }
 
 .content {
@@ -71,32 +72,50 @@
 .game-link-box {
   position: relative;
 }
-
 .game-img {
   width: 378px;
   height: 300px;
-
-  box-sizing: border-box;
   border-radius: 18px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), lightgray 50%;
-  transition: all 0.3s;
-
-  &:hover {
-    border-radius: 16px;
-    border: 3px solid #44D2FF;
-  }
 }
-
 .game-sign {
   position: absolute;
   left: 32px;
   bottom: 32px;
   color: #FFF;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+}
+.game-box {
+  padding-top: 234px;
+  padding-bottom: 234px;
+  background: #000915;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 135px;
+}
+.game__desc {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  justify-content: center;
+}
+.game__text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.game__svg {
+  width: 485px;
+  height: 334px;
 }
 
 .center {
@@ -104,45 +123,19 @@
   padding-right: calc(50% - 600px);
 }
 
-
-/*# sourceMappingURL=style.css.map */
-
-/*мобилка*/
-@media(max-width: 767px) {
+@media ((max-width: 768px)) {
   .top {
-    height: 735px;
-    padding-top: 238px;
-    text-align: center;
+    background-image: url(img/bg-small.jpg);
   }
-
-  .header {
-    width: 343px;
-    font-size: 32px;
-    margin-bottom: 33px;
-  }
-
-  .text {
-    width: 343px;
-    font-size: 14px;
-    margin-bottom: 33px;
-  }
-
   .game-img {
     width: 343px;
-    border-radius: 16px;
   }
-
+  .game__svg {
+    width: 344px;
+    height: 236px;
+  }
   .center {
     padding-left: calc(50% - 172px);
     padding-right: calc(50% - 172px);
   }
-}
-
-@media(max-width: 375px) {
-  .top {
-    background-image: url(img/bg-small.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
+}/*# sourceMappingURL=style.css.map */
