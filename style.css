@@ -21,12 +21,10 @@
   font-weight: 700;
   line-height: normal;
   margin-bottom: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .text {
+  width: 481px;
   color: #FFF;
   font-family: Montserrat;
   font-size: 18px;
@@ -58,6 +56,10 @@
   font-weight: 400;
   padding: 13px 74px;
   box-sizing: border-box;
+  transition: 0.3s;
+}
+.button:hover {
+  background: #EB443F;
 }
 
 .content {
@@ -77,6 +79,12 @@
   height: 300px;
   border-radius: 18px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), lightgray 50%;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.game-img:hover {
+  border-radius: 16px;
+  border: 3px solid #44D2FF;
 }
 .game-sign {
   position: absolute;
@@ -95,17 +103,17 @@
   background: #000915;
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
   gap: 135px;
 }
 .game__desc {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
   justify-content: center;
 }
 .game__text {
+  max-width: 584px;
   color: #FFF;
   font-family: Montserrat;
   font-size: 18px;
@@ -125,7 +133,27 @@
 
 @media ((max-width: 768px)) {
   .top {
+    padding-top: 238px;
+    height: 735px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
     background-image: url(img/bg-small.jpg);
+    align-items: center;
+  }
+  .header {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  .text {
+    text-align: center;
+    width: 343px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .h2 {
+    font-size: 32px;
   }
   .game-img {
     width: 343px;
@@ -134,8 +162,19 @@
     width: 344px;
     height: 236px;
   }
+  .game-box {
+    flex-wrap: wrap;
+  }
+  .game__desc {
+    text-align: center;
+    align-items: center;
+  }
+  .game__text {
+    width: 343px;
+    font-size: 14px;
+  }
   .center {
-    padding-left: calc(50% - 172px);
-    padding-right: calc(50% - 172px);
+    padding-left: calc(50% - 171px);
+    padding-right: calc(50% - 171px);
   }
 }/*# sourceMappingURL=style.css.map */
