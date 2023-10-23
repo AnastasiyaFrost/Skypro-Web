@@ -41,11 +41,11 @@ console.log(arr4.sort());
 
 //Задание 7
 const arr5 = [9, 8, 7, 6, 5];
-let userAnsw = prompt("Угадай число в массиве!");
-if (arr5.indexOf(userAnsw) === -1) {
-    alert("Не угадал, такого числа в массиве нет!");
+let userAnsw = Number(prompt("Угадай число в массиве!"));
+if (arr5.includes(userAnsw)) {
+    alert("Угадал, такое число в массиве есть!");
 } else {
-    alert("Угадал, такое числа в массиве есть!");
+    alert("Не угадал, такого числа в массиве нет!");
 }
 
 //Задание 8
