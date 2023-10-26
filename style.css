@@ -44,6 +44,9 @@
 }
 
 .button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 30px;
   background: #9C0332;
   width: 234px;
@@ -172,6 +175,9 @@
   .game__text {
     width: 343px;
     font-size: 14px;
+  }
+  .game2 {
+    flex-direction: column-reverse;
   }
   .center {
     padding-left: calc(50% - 171px);
